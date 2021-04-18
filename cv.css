@@ -1,0 +1,1152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Narrow Bold', sans-serif, 'Helvetica Neue', sans-serif;
+  }
+
+body {
+    height: 100%;
+    width: 100%;
+    /* margin: 3px solid black; */
+    /* background-color: sienna; */
+}
+ 
+header {
+    width: 72%;
+    float: right;
+    transition: .9s;
+    text-align: center;
+    padding: 3rem;
+    font-size: 24px;
+    background: rgba(129, 124, 117, 0.67);
+}
+
+header .stack {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem;
+}
+
+header p {
+    font-weight: bolder;
+}
+
+header img {
+    height: 150px;
+    transition: .3s;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+section {
+    width: 72%;
+    float: right;
+    padding: 2rem 0;
+    line-height: 2rem;
+}
+
+section h3 {
+    padding: 1rem 0;
+}
+
+article table {
+    width: 90%;
+    line-height: 3rem;
+    font-size: 17px;
+
+}
+.experience h3 {
+    padding-bottom: 2rem;
+}
+
+.engagments h3 {
+    padding: 2rem 0;
+
+}
+
+article table th {
+    text-align: left;
+}
+
+article table td {
+    margin: 0 3rem;
+}
+
+article {
+    width: 72%;
+    float: right;
+    padding: 1rem 0;
+}
+
+article h3 {
+    padding: 1rem 0;
+}
+
+main {
+    width: 72%;
+    float: right;
+    padding: .5rem 0;
+}
+
+main h3 {
+    padding: 1rem 0;
+}
+
+main ul li {
+    margin-left: 2rem;
+    line-height: 2rem;
+    font-size: 17px;
+}
+
+aside {
+    width: 25%;
+    float: left;
+    height: 100%;
+    background: rgb(7, 7, 26);
+    padding-top: 1rem;
+    color: seashell;
+}
+
+aside img {
+    height: 20%;
+    width: 80%;
+    border-radius: 200px;
+    margin: 2rem;
+}
+
+aside h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+
+.skillset {
+    margin:.5rem .5rem;
+    padding: .5rem 1rem;
+    border-bottom: 3px solid seashell;
+}
+
+.skillset ul>li {
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+.skillset ul li ol {
+    padding: 0 .5rem;
+}
+
+.skillset ul li ol li {
+    list-style: none;
+    padding: .5rem 1rem;
+    font-style: italic;
+}
+
+.edu {
+    margin: 2rem 0;
+    border-bottom: 3px solid seashell;
+}
+
+.edu h5 {
+    font-size: 18px;
+    padding-bottom: .5rem;
+}
+
+.edu p {
+    padding-bottom: 2rem;
+    line-height: 2rem;
+}
+
+.contact {
+    margin: 2rem 0;
+    border-bottom: 3px solid seashell;
+}
+
+.contact p {
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.contact img {
+    height: 30px;
+    width: 30px;
+    margin: 0 1rem;
+}
+
+.socials {
+    padding-bottom: 3rem;
+}
+
+.socials img {
+    height: 30px;
+    width: 30px;
+    margin: .5rem 1rem;
+}
+
+.socials img:hover{
+    height: 50px;
+    width: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+
+    aside {
+        width: 25%;
+        padding: 0;
+        margin: 0;
+    }
+
+    aside img {
+        height: 40%;
+        width: 50%;
+        border-radius: 1px;
+    }
+    
+    aside h4 {
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-bottom: 1rem;
+    }
+
+    .skillset {
+        margin:.25rem 0;
+        padding: .2rem .75rem;
+        font-size: 10.5px;
+    }
+    
+    .skillset ul>li {
+        font-weight: bolder;
+        padding: .5rem 0;
+    }
+    
+    .skillset ul li ol {
+        padding: 0 .25rem;
+    }
+    
+    .skillset ul li ol li {
+        padding: .25rem .5rem;
+        font-size: 8px;
+    }
+
+    .edu {
+        padding: 0 .5rem;
+    }
+
+    .edu h5 {
+        font-size: 12px;
+        padding-bottom: .25rem;
+    }
+    
+    .edu p {
+        padding-bottom: 2rem;
+        line-height: .75rem;
+        font-size: 10px;
+    }
+    
+    .contact {
+        margin: 1rem 0;
+        padding: 0 .25rem;
+    }
+    
+    .contact p {
+        margin: 0;
+        padding-bottom: .75rem;
+        font-size: 8px;
+        text-align: center;
+    } 
+    
+    .contact img {
+        height: 15px;
+        width: 15px;
+        margin: 0 1rem;
+        align-self: center;
+    }
+    
+    .socials {
+        padding-bottom: 2rem;
+    }
+    
+    .socials img {
+        height: 15px;
+        width: 15px;
+        margin: .5rem 1rem;
+    }
+    
+    .socials img:hover{
+        height: 20px;
+        width: 20px;
+    }
+
+    header {
+        width: 75%;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: .5rem;
+        font-size: 10px;
+        margin: 0;
+        background: rgba(129, 124, 117, 0.67);
+        transition: .6s;
+    }
+    
+    header .stack {
+        display: inline-block;
+        font-size: 10px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    header p {
+        font-weight: 550;
+        margin-bottom: 0;
+        padding-bottom: 0; 
+    }
+    
+    header img {
+        height: 50px;
+    }
+    
+    h3 {
+        font-size: 15px;
+    }
+    
+    p {
+        font-size: 10px;
+    }
+    
+    section {
+        width: 75%;
+        padding: .25rem;
+        line-height: 1rem;
+    }
+    
+    section h3 {
+        padding: .25rem 0;
+    }
+    
+    article h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    article table {
+        width: 90%;
+        line-height: 1rem;
+        font-size: 10px;
+    }
+    
+    article table th {
+        width: 15%;
+    }
+    
+    article table td {
+        margin: 0;
+        width: 15%;
+    }
+    
+    article {
+        width: 75%;
+        padding: 0 .25rem;
+    }
+    
+    main {
+        width: 75%;
+        float: right;
+        padding: .25rem;
+    }
+    
+    main h3 {
+        padding: .1rem;
+    }
+    
+    main ul li {
+        margin-left: 2rem;
+        line-height: 1rem;
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 400px) {
+
+    aside {
+        width: 25%;
+        padding: 0;
+        margin: 0;
+    }
+
+    aside img {
+        height: 40%;
+        width: 50%;
+        border-radius: 1px;
+    }
+    
+    aside h4 {
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-bottom: 1rem;
+    }
+
+    .skillset {
+        margin:.25rem 0;
+        padding: .2rem .75rem;
+        font-size: 10.5px;
+    }
+    
+    .skillset ul>li {
+        font-weight: bolder;
+        padding: .5rem 0;
+    }
+    
+    .skillset ul li ol {
+        padding: 0 .25rem;
+    }
+    
+    .skillset ul li ol li {
+        padding: .25rem .5rem;
+        font-size: 8px;
+    }
+
+    .edu {
+        padding: 0 .5rem;
+    }
+
+    .edu h5 {
+        font-size: 12px;
+        padding-bottom: .25rem;
+    }
+    
+    .edu p {
+        padding-bottom: 2rem;
+        line-height: .75rem;
+        font-size: 10px;
+    }
+    
+    .contact {
+        margin: 1rem 0;
+        padding: 0 .25rem;
+    }
+    
+    .contact p {
+        margin: 0;
+        padding-bottom: .75rem;
+        font-size: 8px;
+        text-align: center;
+    } 
+    
+    .contact img {
+        height: 15px;
+        width: 15px;
+        margin: 0 1rem;
+        align-self: center;
+    }
+    
+    .socials {
+        padding-bottom: 2rem;
+    }
+    
+    .socials img {
+        height: 15px;
+        width: 15px;
+        margin: .5rem 1rem;
+    }
+    
+    .socials img:hover{
+        height: 20px;
+        width: 20px;
+    }
+
+    header {
+        width: 75%;
+        text-align: center;
+        padding: 2rem 0;
+        font-size: 10px;
+        margin: 0;
+        background: rgba(129, 124, 117, 0.67);
+        transition: .6s;
+    }
+    
+    header .stack {
+        display: inline-block;
+        font-size: 10px;
+    }
+    
+    header p {
+        font-weight: 550;
+        
+    }
+    
+    header img {
+        height: 40px;
+    }
+    
+    h3 {
+        font-size: 15px;
+    }
+    
+    p {
+        font-size: 10px;
+    }
+    
+    section {
+        width: 75%;
+        padding: .5rem;
+        line-height: 1rem;
+    }
+    
+    section h3 {
+        padding: 1rem 0;
+    }
+    
+    article table {
+        width: 90%;
+        line-height: 1rem;
+        font-size: 10px;
+    }
+    
+    article table th {
+        width: 15%;
+    }
+    
+    article table td {
+        margin: 0;
+        width: 15%;
+    }
+    
+    article {
+        width: 75%;
+        padding: .5rem;
+    }
+    
+    main {
+        width: 75%;
+        float: right;
+        padding: .5rem .25rem;
+    }
+    
+    main h3 {
+        padding: .5rem;
+    }
+    
+    main ul li {
+        margin-left: 2rem;
+        line-height: 1rem;
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 500px) {
+
+    aside {
+        width: 25%;
+        padding: 0;
+        margin: 0;
+    }
+
+    aside img {
+        height: 40%;
+        width: 50%;
+        border-radius: 1px;
+    }
+    
+    aside h4 {
+        text-transform: uppercase;
+        font-size: 12px;
+        padding-bottom: 1rem;
+    }
+
+    .skillset {
+        margin:.25rem 0;
+        padding: .2rem .75rem;
+        font-size: 10.5px;
+    }
+    
+    .skillset ul>li {
+        font-weight: bolder;
+        padding: .5rem 0;
+    }
+    
+    .skillset ul li ol {
+        padding: 0 .25rem;
+    }
+    
+    .skillset ul li ol li {
+        padding: .25rem .5rem;
+        font-size: 8px;
+    }
+
+    .edu {
+        padding: 0 .5rem;
+    }
+
+    .edu h5 {
+        font-size: 12px;
+        padding-bottom: .25rem;
+    }
+    
+    .edu p {
+        padding-bottom: 2rem;
+        line-height: .75rem;
+        font-size: 10px;
+    }
+    
+    .contact {
+        margin: 1rem 0;
+        padding: 0 .25rem;
+    }
+    
+    .contact p {
+        margin: 0;
+        padding-bottom: .75rem;
+        font-size: 8px;
+        text-align: center;
+    } 
+    
+    .contact img {
+        height: 15px;
+        width: 15px;
+        margin: 0 1rem;
+        align-self: center;
+    }
+    
+    .socials {
+        padding-bottom: 2rem;
+    }
+    
+    .socials img {
+        height: 15px;
+        width: 15px;
+        margin: .5rem 1rem;
+    }
+    
+    .socials img:hover{
+        height: 20px;
+        width: 20px;
+    }
+
+    header {
+        font-size: 15px;
+    }
+    
+    header .stack {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+    
+    header p {
+        font-weight: 600;
+        
+    }
+    
+    header img {
+        height: 80px;
+    }
+    
+    
+    section {
+        padding: .25rem .5rem;
+    }
+    
+    section h3 {
+        padding: .5rem 0;
+    }
+    
+    article table tr {
+        padding: .2rem 0;
+    }
+    
+    article table th {
+        width: 25%;
+    }
+    
+    article table td {
+        margin: .25rem;
+        width: 25%;
+    }
+    
+    article {
+        padding: .25rem .5rem;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .skillset {
+        padding: .5rem;
+        border-bottom: 3px solid seashell;
+    }
+    
+    .skillset ul>li {
+        font-weight: bolder;
+        padding: .5rem 1rem;
+        font-size: 11px;
+    }
+    
+    .skillset ul li ol li {
+        padding: .5rem 1rem;
+        font-size: 10px;
+    }
+    
+    .edu {
+        margin: 2rem 0;
+        border-bottom: 3px solid seashell;
+    }
+    
+    .edu h5 {
+        font-size: 13px;
+        padding-bottom: .5rem;
+    }
+    
+    .edu p {
+        padding-bottom: 2rem;
+        line-height: 1rem;
+        font-size: 13px;
+    }
+    
+    .contact {
+        margin: 2rem 0;
+        border-bottom: 3px solid seashell;
+    }
+    
+    .contact p {
+        margin: 0;
+        padding-bottom: 2rem;
+        text-align: left;
+        font-size: 10px;
+    }
+    
+    .contact img {
+        height: 30px;
+        width: 30px;
+        margin: 0 1rem;
+        align-self: flex-start;
+    }
+
+    section {
+        width: 75%;
+        padding: 1rem .5rem;
+        line-height: 1.5rem;
+        font-size: 15px;
+    }
+
+    article table {
+        width: 95%;
+    }
+
+    article table th {
+        width: 35%;
+        margin: 0 3rem;
+        font-size: 12px;
+    }
+    
+    article table td {
+        margin: 0 3rem;
+        width: 35%;
+        font-size: 12px;
+    }
+    
+    article table tr {
+        width: 35%;
+        margin: 0 3rem;
+    }
+
+    article {
+        float: right;
+        padding: .5rem;
+    }
+    
+    article h3 {
+        padding: 1rem 0;
+    }
+    
+    main {
+        width: 75%;
+        float: right;
+        padding: .5rem;
+    }
+    
+    main ul li {
+        margin-left: 2rem;
+        line-height: 2rem;
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    
+    html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    aside {
+        width: 28%;
+    }
+
+    aside img {
+        width: 70%;
+        border-radius: 50%;
+    }
+    
+    aside h4 {
+        font-size: 18px;
+    }
+
+    .skillset {
+        margin: 0;
+        padding: .5rem 1rem;
+        font-size: 20px;
+    }
+    
+    .skillset ul>li {
+        padding: 1rem;
+    }
+    
+    .skillset ul li ol {
+        padding: 0 1rem;
+    }
+    
+    .skillset ul li ol li {
+        padding: .5rem 1rem;
+        font-size: 10px;
+    }
+
+    .edu {
+        padding: 0 1rem;
+    }
+
+    .edu h5 {
+        font-size: 15px;
+        padding-bottom: 1rem;
+    }
+    
+    .edu p {
+        padding-bottom: 2rem;
+        line-height: 1rem;
+        font-size: 13px;
+    }
+    
+    .contact {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+    
+    .contact p {
+        padding-bottom: 1.5rem;
+        font-size: 12px;
+        text-align: center;
+        display: flex;
+    } 
+    
+    .contact img {
+        height: 15px;
+        width: 15px;
+        padding: 0;
+        align-self: center;
+    }
+    
+    .socials {
+        padding: 1rem;
+    }
+    
+    .socials img {
+        height: 30px;
+        width: 30px;
+    }
+    
+    .socials img:hover{
+        height: 40px;
+        width: 40px;
+    }
+
+    header {
+        width: 70%;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        font-size: 15px;
+        background: rgba(129, 124, 117, 0.67);
+        transition: .6s;
+    }
+    
+    header .stack {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+    
+    header p {
+        font-weight: 800;
+        margin-bottom: 0;
+        padding-bottom: 0; 
+    }
+    
+    header img {
+        height: 80px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+    
+    section {
+        width: 70%;
+        padding: 1rem;
+        line-height: 2rem;
+    }
+    
+    section h3 {
+        padding: 1rem 0;
+    }
+    
+    article h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    article table {
+        width: 98%;
+        line-height: 2rem;
+        font-size: 14px;
+    }
+    
+    article table th {
+        width: 17%;
+    }
+    
+    article table td {
+        margin: 0;
+        width: 17%;
+    }
+    
+    article {
+        width: 70%;
+        padding: 0 1rem;
+    }
+    
+    main {
+        width: 70%;
+        float: right;
+        padding: 1rem;
+    }
+    
+    main h3 {
+        padding: 1rem 0;
+    }
+    
+    main ul li {
+        margin-left: 2rem;
+        line-height: 2rem;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 922px) {
+         
+    header {
+        width: 72%;
+        float: right;
+        transition: .9s;
+        text-align: center;
+        padding: 3rem;
+        font-size: 24px;
+        background: rgba(129, 124, 117, 0.67);
+    }
+    
+    header .stack {
+        display: flex;
+        justify-content: space-around;
+        padding: .5rem;
+    }
+    
+    header p {
+        font-weight: bolder;
+    }
+    
+    header img {
+        height: 150px;
+        transition: .8s;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    section {
+        width: 72%;
+        float: right;
+        padding: 2rem 0;
+        line-height: 2rem;
+    }
+    
+    section h3 {
+        padding: 1rem 0;
+    }
+    
+    article table {
+        width: 98%;
+        line-height: 2.5rem;
+    }
+    .experience h3 {
+        padding-bottom: 1rem;
+    }
+    
+    .engagments h3 {
+        padding: 2rem 0;
+    
+    }
+
+    /* article table tr{
+        width: 30%;
+    } */
+    
+    article table th {
+        text-align: left;
+        font-size: 15px;
+        width: 30%;
+    }
+    
+    article table td {
+        margin: 0 3rem;
+        font-size: 15px;
+        width: 35%;
+    }
+    
+    article {
+        width: 72%;
+        float: right;
+        padding: 1rem 0;
+    }
+    
+    article h3 {
+        padding: 1rem 0;
+    }
+    
+    main {
+        width: 72%;
+        float: right;
+        padding: .5rem 0;
+    }
+    
+    main h3 {
+        padding: 1rem 0;
+    }
+    
+    main ul li {
+        margin-left: 2rem;
+        line-height: 2.5rem;
+        font-size: 17px;
+    }
+    
+    aside {
+        width: 27%;
+        float: left;
+        height: 100%;
+        background: rgb(7, 7, 26);
+        padding-top: 1rem;
+        color: seashell;
+    }
+    
+    aside img {
+        height: 20%;
+        width: 80%;
+        border-radius: 200px;
+        margin: 1rem;
+    }
+    
+    aside h4 {
+        text-transform: uppercase;
+        font-size: 25px;
+        padding-bottom: 1rem;
+    }
+    
+    .skillset {
+        margin:.5rem .5rem;
+        padding: .5rem 1rem;
+        border-bottom: 3px solid seashell;
+    }
+    
+    .skillset ul>li {
+        font-weight: bolder;
+        margin: 1rem;
+        padding: 1rem 2rem;
+        font-size: 20px;
+    }
+    
+    .skillset ul li ol {
+        padding: 0 2rem;
+    }
+    
+    .skillset ul li ol li {
+        list-style: none;
+        padding: .5rem 1rem;
+        font-style: italic;
+        font-size: 15px;
+    }
+    
+    .edu {
+        margin: 2rem 0;
+        border-bottom: 3px solid seashell;
+    }
+    
+    .edu h5 {
+        font-size: 20px;
+        padding-bottom: .5rem;
+    }
+    
+    .edu p {
+        padding-bottom: 2rem;
+        line-height: 2rem;
+        font-size: 15px;
+    }
+    
+    .contact {
+        margin: 2rem 0;
+        border-bottom: 3px solid seashell;
+    }
+    
+    .contact p {
+        margin: 0;
+        padding-bottom: 2rem;
+        font-size: 15px;
+    }
+    
+    .contact img {
+        height: 30px;
+        width: 30px;
+        margin: 0 1rem;
+    }
+    
+    .socials {
+        padding-bottom: 3rem;
+    }
+    
+    .socials img {
+        height: 30px;
+        width: 30px;
+        margin: .5rem 1rem;
+    }
+    
+    .socials img:hover{
+        height: 50px;
+        width: 50px;
+    }  
+}
+
+
