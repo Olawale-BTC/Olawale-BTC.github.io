@@ -7,280 +7,112 @@
 
   body {
     width: 100%;
-    height: 100%;
-}
+  }
 
-nav {
-    width: 100%;
-    background-color: black;
-    font-size: medium;
-    position: fixed;
-    top: 0;
-    margin-bottom: 2em;
-    text-align: center;
-    height: 15%;
-}
-
-nav h4 {
-    margin: .2em 0; 
-    color: chartreuse;       
-}
-
-.comm {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-.comm p {
-    margin: .3em;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    color: chartreuse;
-}
-
-.comm p img {
-    height: 1em;
-    width: 1em;
-    align-self: center;
-    margin-bottom: .5em;
-}
-
-img {
-    width: 100%;
-}
-
-header {
-    margin-top: 8em;
-    text-align: center;
-    padding: .5em;
-}
-
-#me {
-    width: 40%;
-    height: 20em;
-    border: 1px solid #000;
-    border-radius: 50%;
-}
-
-header img { 
-    width: 75%;
-}
-
-header p {
-    text-align: center;
-    padding: .7em 2em;
-    font-size: large;
-}
-
-.stack {
-    display: flex;
-    justify-content: space-around;
-    font-size: small;     
-}
-
-.stack-name {
-    text-align: center;
-    border: 2px solid #000;
-    margin: 1em;
-    background: #000;
-    color: chartreuse;
-}
-
-main {
-    font-size: medium;
-    padding: 2em;
-    text-align: justify;
-}
-
-article h3 {
-    margin-bottom: 1em;
-    color: chartreuse;
-    background: #000;
-}
-
-article ul {
-    margin-bottom: 1em;
-    font-size: medium;
-}
-
-article li {
-    margin-left: 2em;
-}
-
-article h4 {
-    margin-left: 1em;
-    margin-bottom: .5em;
-}
-
-article p {
-    margin-left: 1em;
-}
-
-.exp {
-    margin-bottom: 1em;
-    border-bottom: 1px solid #000;
-}
-
-.exp h4 {
-    margin-bottom: .5em;
-}
-
-.year {
-    display: flex;
-    justify-content:space-between;
-}
-
-.exp h4 {
-    margin: 0.5 0;
-    
-}
-
-.exp ul li {
-    margin-left: 2em;
-    padding: .2em;
-}
-aside {
-    visibility: hidden;
-}
-
-footer {
-    background: #000;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position:absolute;
-}
-
-.zuri {
-    width: 45%;
-    margin: .5em 0;
-    padding-left: 1em;
-}
-
-.socials {
-    color: chartreuse;
-    font-size: small;
-    width: 45%;
-    
-}
-
-.socials ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-.socials ul li{
-    list-style: none;
-}
-
-.socials img {
-    width: 1.3em;
-    height: 1.3;
-    margin-top: 1em;
-}
-
-  @media only screen and (max-width: 480px) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
-    
+  @media screen and (max-width: 320px) {
     nav {
         width: 100%;
-        background-color: black;
-        font-size: x-small;
+        background-color: rgb(50, 80, 50);
+        font-size: xx-small;
+        font-weight: bolder;
         position: fixed;
-        top: 0;
-        margin-bottom: 2em;
-        text-align: center;
-        height: 10%;
-    }
-
-    nav h4 {
-        margin: .2em 0; 
-        color: chartreuse;       
-    }
+        height: 12%;
+        top: 0;        
+    } 
 
     .comm {
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-between; 
+        text-align: center;
+        padding-top: .5em;
+        padding: .5em;
     }
 
-    .comm p {
-        margin: .3em;
-        width: 30%;
+    .comm-img {
         display: flex;
         flex-direction: column;
         color: chartreuse;
     }
 
-    .comm p img {
-        height: 1em;
-        width: 1em;
-        align-self: center;
-        margin-bottom: .5em;
+    .comm-img:hover {
+        border: 1px solid chartreuse;
+        padding: .5em;
     }
 
-    img {
-        width: 100%;
+    .comm-img img {
+        height:1.5em;
+        width: 1.5em;
+        align-self: center;
+        margin-bottom: .5em;
+        border: 1px solid rgb(50, 80, 50);
+        border-radius: 50%;
     }
 
     header {
         margin-top: 4em;
         text-align: center;
         padding: .5em;
+        background: rgba(50, 80, 50, .8);
     }
 
-    
-    header img { 
-        width: 75%;
+    h1 {
+        color: #fff;
+        font-size: larger;
+        margin: 2em .5em;
     }
 
     #me {
-        width: 30%;
+        width: 50%;
         height: 10em;
-        border: 1px solid #000;
+        border: .1px solid #000;
         border-radius: 50%;
     }
 
     header p {
         text-align: justify;
-        padding: .7em 2em;
+        margin: 0 1em;
+        padding: .7em 1em;
         font-size: smaller;
+        background: #fff;
+        transition: .9s;
     }
 
     .stack {
         display: flex;
-        justify-content: space-around;
-        font-size: smaller;     
+        justify-content: space-evenly;
+        font-size: smaller;
+        padding: 0 .7em;
+        width: 100%;
+        margin: .5em 0;
     }
 
     .stack-name {
         text-align: center;
         border: 2px solid #000;
-        margin: 1em;
-        background: #000;
+        margin: .3em;
+        background: rgb(50, 80, 50);
         color: chartreuse;
+        width: 43%;
     }
 
     main {
-        font-size: small;
-        padding: 2em;
+        font-size: smaller;
+        padding: 1em 0;
         text-align: justify;
     }
 
     article h3 {
         margin-bottom: 1em;
         color: chartreuse;
-        background: #000;
+        background: rgb(50, 80, 50);
+        padding-left: 1em;
+        font-size: small;
     }
 
     article ul {
-        margin-bottom: 1em;
-        font-size: small;
+        margin: 1em;
+        font-size: smaller;
     }
 
     article li {
@@ -297,7 +129,7 @@ footer {
     }
 
     .exp {
-        margin-bottom: 1em;
+        margin: 1em;
         border-bottom: 1px solid #000;
     }
 
@@ -313,18 +145,18 @@ footer {
     .exp h4 {
         margin: 0.5 0; 
     }
-    
 
     .exp ul li {
         margin-left: 2em;
         padding: .2em;
     }
+
     aside {
-        visibility: hidden;
+        display: none;
     }
 
     footer {
-        background: #000;
+        background: rgb(50, 80, 50);
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -337,10 +169,18 @@ footer {
         padding-left: .7em;
     }
 
+    .zuri img {
+        width: 60%;
+        padding-left: .5em;
+        padding-top: .5em;
+    }
+
     .socials {
         color: chartreuse;
         font-size: x-small;
         width: 45%;
+        padding-top: .5em;
+        padding-right: .5em;
         
     }
 
@@ -354,111 +194,311 @@ footer {
     }
 
     .socials img {
-        width: 1.3em;
-        height: 1.3;
+        width: 2em;
+        height: 2em;
         margin-top: 1em;
+        border: 1px solid rgb(50, 80, 50);
+        border-radius: 50%;
     }
   }
 
-  @media only screen and (max-width: 768px) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
-    
+@media screen and (max-width: 480px) {
     nav {
         width: 100%;
-        background-color: black;
-        font-size: smaller;
+        background-color: rgb(50, 80, 50);
+        font-size: x-small;
+        font-weight: bolder;
         position: fixed;
-        top: 0;
-        margin-bottom: 2em;
-        text-align: center;
-        height: 15%;
-    }
-
-    nav h4 {
-        margin: .2em 0; 
-        color: chartreuse;       
-    }
+        height: 12%;
+        top: 0;        
+    } 
 
     .comm {
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-between; 
+        text-align: center;
+        padding-top: 1em;
+        padding: .5em;
     }
 
-    .comm p {
-        margin: .3em;
-        width: 30%;
+    .comm-img {
         display: flex;
         flex-direction: column;
         color: chartreuse;
     }
 
-    .comm p img {
-        height: 1em;
-        width: 1em;
-        align-self: center;
-        margin-bottom: .5em;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    header {
-        margin-top: 5.5em;
-        text-align: center;
+    .comm-img:hover {
+        border: 1px solid chartreuse;
         padding: .5em;
     }
 
+    .comm-img img {
+        height:2em;
+        width: 2em;
+        align-self: center;
+        margin-bottom: .5em;
+        border: 1px solid rgb(50, 80, 50);
+        border-radius: 50%;
+    }
+
+    header {
+        margin-top: 4em;
+        text-align: center;
+        padding: .5em;
+        background: rgba(50, 80, 50, .8);
+    }
+
+    h1 {
+        color: #fff;
+        font-size: larger;
+        margin: 2em .5em;
+    }
+
     #me {
-        width: 40%;
+        width: 50%;
+        height: 10em;
+        border: .1px solid #000;
+        border-radius: 50%;
+    }
+
+    header p {
+        text-align: justify;
+        margin: 0 1em;
+        padding: .7em 1em;
+        font-size: smaller;
+        background: #fff;
+        transition: .9s;
+    }
+
+    .stack {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: smaller;
+        padding: 0 .7em;
+        width: 100%;
+        margin: .5em 0;
+    }
+
+    .stack-name {
+        text-align: center;
+        border: 2px solid #000;
+        margin: .3em;
+        background: rgb(50, 80, 50);
+        color: chartreuse;
+        width: 43%;
+    }
+
+    main {
+        font-size: smaller;
+        padding: 1em 0;
+        text-align: justify;
+    }
+
+    article h3 {
+        margin-bottom: 1em;
+        color: chartreuse;
+        background: rgb(50, 80, 50);
+        padding-left: 1em;
+        font-size: small;
+    }
+
+    article ul {
+        margin: 1em;
+        font-size: smaller;
+    }
+
+    article li {
+        margin-left: 2em;
+    }
+
+    article h4 {
+        margin-left: 1em;
+        margin-bottom: .5em;
+    }
+
+    article p {
+        margin-left: 1em;
+    }
+
+    .exp {
+        margin: 1em;
+        border-bottom: 1px solid #000;
+    }
+
+    .exp h4 {
+        margin-bottom: .5em;
+    }
+
+    .year {
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .exp h4 {
+        margin: 0.5 0; 
+    }
+
+    .exp ul li {
+        margin-left: 2em;
+        padding: .2em;
+    }
+
+    aside {
+        display: none;
+    }
+
+    footer {
+        background: rgb(50, 80, 50);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position:absolute;
+    }
+
+    .zuri {
+        width: 45%;
+        margin: .5em 0;
+        padding-left: .7em;
+    }
+
+    .zuri img {
+        width: 60%;
+        padding-left: .5em;
+        padding-top: .5em;
+    }
+
+    .socials {
+        color: chartreuse;
+        font-size: x-small;
+        width: 45%;
+        padding-top: .5em;
+        padding-right: .5em;
+        
+    }
+
+    .socials ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .socials ul li{
+        list-style: none;
+    }
+
+    .socials img {
+        width: 2em;
+        height: 2em;
+        margin-top: 1em;
+        border: 1px solid rgb(50, 80, 50);
+        border-radius: 50%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+        background-color: rgb(50, 80, 50);
+        font-size: smaller;
+        font-weight: bolder;
+        position: fixed;
+        height: 12%;
+        top: 0;        
+    } 
+
+    .comm {
+        display: flex;
+        width: 100%;
+        justify-content: space-around; 
+        text-align: center;
+        padding: 1em;
+    }
+
+    .comm-img {
+        display: flex;
+        justify-content: space-between;
+        color: chartreuse;
+    }
+
+    .comm-img:hover {
+        border: 1px solid chartreuse;
+        padding: .5em;
+    }
+
+    .comm-img img {
+        height:2em;
+        width: 2em;
+        align-self: center;
+        margin-bottom: .5em;
+        margin-right: .5em;
+        border: 1px solid rgb(50, 80, 50);
+        border-radius: 50%;
+    }
+
+    header {
+        margin-top: 4em;
+        text-align: center;
+        padding: .5em;
+        background: rgba(50, 80, 50, .8);
+    }
+
+    h1 {
+        color: #fff;
+        margin: 1em 0;
+    }
+
+    #me {
+        width: 30%;
         height: 12em;
-        border: 1px solid #000;
+        border: .1px solid #000;
         border-radius: 50%;
-    }
-    
-    header img { 
-        width: 75%;
     }
 
     header p {
         text-align: justify;
-        padding: .7em 2em;
+        margin: 0 1em;
+        padding: .7em 1em;
         font-size: small;
+        background: #fff;
+        transition: .9s;
     }
 
     .stack {
         display: flex;
-        justify-content: space-around;
-        font-size: small;     
+        justify-content: space-evenly;
+        font-size: small;
+        padding: 0 .7em;
+        width: 100%;
+        margin: 1em 0;
     }
 
     .stack-name {
         text-align: center;
         border: 2px solid #000;
-        margin: 1em;
-        background: #000;
+        margin: .3em;
+        background: rgb(50, 80, 50);
         color: chartreuse;
+        width: 43%;
     }
 
     main {
-        font-size: medium;
-        padding: 2em;
+        font-size: small;
+        padding: 1em 0;
         text-align: justify;
     }
 
     article h3 {
         margin-bottom: 1em;
+        padding: .5em;
         color: chartreuse;
-        background: #000;
+        background: rgb(50, 80, 50);
+        padding-left: 1em;
+        font-size: medium;
     }
 
     article ul {
-        margin-bottom: 1em;
-        font-size: medium;
+        margin: 1em;
+        font-size: small;
     }
 
     article li {
@@ -475,7 +515,7 @@ footer {
     }
 
     .exp {
-        margin-bottom: 1em;
+        margin: 1em;
         border-bottom: 1px solid #000;
     }
 
@@ -489,20 +529,20 @@ footer {
     }
 
     .exp h4 {
-        margin: 0.5 0;
-        
+        margin: 0.5 0; 
     }
-    
+
     .exp ul li {
         margin-left: 2em;
         padding: .2em;
     }
+
     aside {
-        visibility: hidden;
+        display: none;
     }
 
     footer {
-        background: #000;
+        background: rgb(50, 80, 50);
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -512,13 +552,21 @@ footer {
     .zuri {
         width: 45%;
         margin: .5em 0;
-        padding-left: 1em;
+        padding-left: .7em;
+    }
+
+    .zuri img {
+        width: 60%;
+        padding-left: .5em;
+        padding-top: .5em;
     }
 
     .socials {
         color: chartreuse;
-        font-size: small;
+        font-size: x-small;
         width: 45%;
+        padding-top: .5em;
+        padding-right: .5em;
         
     }
 
@@ -532,111 +580,123 @@ footer {
     }
 
     .socials img {
-        width: 1.3em;
-        height: 1.3;
+        width: 2em;
+        height: 2em;
         margin-top: 1em;
+        border: 1px solid rgb(50, 80, 50);
+        border-radius: 50%;
     }
   }
 
-  @media only screen and (max-width: 1024px) {
-    body {
-        width: 100%;
-        height: 100%;
-    }
-    
+@media screen and (max-width: 1024px) {
     nav {
         width: 100%;
-        background-color: black;
+        background-color: rgb(50, 80, 50);
         font-size: smaller;
+        font-weight: bolder;
         position: fixed;
-        top: 0;
-        margin-bottom: 2em;
-        text-align: center;
-        height: 15%;
-    }
-
-    nav h4 {
-        margin: .2em 0; 
-        color: chartreuse;       
-    }
+        height: 12%;
+        top: 0;        
+    } 
 
     .comm {
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-around; 
+        text-align: center;
+        padding: 1em;
     }
 
-    .comm p {
-        margin: .3em;
-        width: 30%;
+    .comm-img {
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
         color: chartreuse;
     }
 
-    .comm p img {
-        height: 1em;
-        width: 1em;
-        align-self: center;
-        margin-bottom: .5em;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    header {
-        margin-top: 5.5em;
-        text-align: center;
+    .comm-img:hover {
+        border: 1px solid chartreuse;
         padding: .5em;
     }
 
-    #me {
-        width: 40%;
-        height: 15em;
-        border: 1px solid #000;
+    .comm-img img {
+        height:2em;
+        width: 2em;
+        align-self: center;
+        margin-bottom: .5em;
+        margin-right: .5em;
+        border: 1px solid rgb(50, 80, 50);
         border-radius: 50%;
     }
 
-    header img { 
-        width: 75%;
+    header {
+        margin-top: 4em;
+        text-align: center;
+        padding: .5em;
+        background: rgba(50, 80, 50, .8);
+    }
+
+    h1 {
+        color: #fff;
+        margin: 1em 0;
+    }
+
+    #me {
+        width: 30%;
+        height: 12em;
+        border: .1px solid #000;
+        border-radius: 50%;
     }
 
     header p {
         text-align: justify;
-        padding: .7em 2em;
+        margin: 0 1em;
+        padding: .7em 1em;
         font-size: small;
+        background: #fff;
+        transition: .9s;
     }
 
     .stack {
         display: flex;
-        justify-content: space-around;
-        font-size: small;     
+        justify-content: space-evenly;
+        font-size: small;
+        padding: 0 .7em;
+        width: 100%;
+        margin: 1em 0;
     }
 
     .stack-name {
         text-align: center;
         border: 2px solid #000;
-        margin: 1em;
-        background: #000;
+        margin: .3em;
+        background: rgb(50, 80, 50);
         color: chartreuse;
+        width: 43%;
     }
 
     main {
-        font-size: medium;
-        padding: 2em;
+        font-size: small;
+        padding: 1em 0;
         text-align: justify;
+    }
+
+    article {
+        width: 70%;
+        float: right;
     }
 
     article h3 {
         margin-bottom: 1em;
+        padding: .5em;
         color: chartreuse;
-        background: #000;
+        background: rgb(50, 80, 50);
+        padding-left: 1em;
+        font-size: medium;
     }
 
     article ul {
-        margin-bottom: 1em;
-        font-size: medium;
+        margin: 1em;
+        font-size: small;
     }
 
     article li {
@@ -653,7 +713,7 @@ footer {
     }
 
     .exp {
-        margin-bottom: 1em;
+        margin: 1em;
         border-bottom: 1px solid #000;
     }
 
@@ -667,36 +727,84 @@ footer {
     }
 
     .exp h4 {
-        margin: 0.5 0;
-        
+        margin: 0.5 0; 
     }
-    
+
     .exp ul li {
         margin-left: 2em;
         padding: .2em;
     }
+
     aside {
-        visibility: hidden;
+        display: block;
+        width: 28%;
+        float: left;
+        margin-right: .3em;
+    }
+
+    aside h3 {
+        padding: .6em 2em;
+        background: rgb(50, 80, 50);
+        color: chartreuse;
+       
+    }
+
+    aside h4 {
+        margin: .5em 1em;
+        list-style: none;
+    }
+
+    aside ul li h4 {
+        list-style: none;
+        padding: 1em;
+    }
+
+    aside ul li ul {
+        padding-left: 4em;
+        border-bottom: 1px solid #000;
+        margin-bottom: 1em;
+        font-size: small;
+    }
+
+    aside ul li ul li {
+        padding: .5em 0;
+    }
+
+    .hobbies ul {
+        padding-left: 4em;
+    }
+
+    .hobbies ul li {
+        padding: .5em 0;
+        list-style: none;
     }
 
     footer {
-        background: #000;
+        background: rgb(50, 80, 50);
         display: flex;
         justify-content: space-between;
         width: 100%;
-        position:absolute;
+        position:relative;
     }
 
     .zuri {
         width: 45%;
         margin: .5em 0;
+        padding-left: .7em;
+        display: flex;
+    }
+
+    .zuri img {
+        width: 60%;
         padding-left: 1em;
+        padding-top: .5em;
+        height: 3em;
     }
 
     .socials {
-        color: chartreuse;
-        font-size: small;
         width: 45%;
+        padding-top: .5em;
+        padding-right: .5em;
         
     }
 
@@ -710,10 +818,249 @@ footer {
     }
 
     .socials img {
-        width: 1.3em;
-        height: 1.3;
+        width: 1.6em;
+        height: 1.6em;
         margin-top: 1em;
+        border: 1px solid rgb(50, 80, 50);
+        border-radius: 50%;
     }
   }
 
-  
+@media screen and (max-width:1200px) {
+    nav {
+        width: 100%;
+        background-color: rgb(50, 80, 50);
+        font-size: smaller;
+        font-weight: bolder;
+        position: fixed;
+        height: 15%;
+        top: 0;        
+    } 
+
+    .comm {
+        display: flex;
+        width: 100%;
+        justify-content: space-around; 
+        text-align: center;
+        padding: 1em;
+    }
+
+    .comm-img {
+        display: flex;
+        justify-content: space-between;
+        color: chartreuse;
+        padding: .5em;
+    }
+
+    .comm-img:hover {
+        border: 1px solid chartreuse;
+        padding: .5em;
+    }
+
+    .comm-img img {
+        height:2em;
+        width: 2em;
+        align-self: center;
+        margin-bottom: .5em;
+        margin-right: 1em;
+        border: 1px solid rgb(50, 80, 50);
+        border-radius: 50%;
+    }
+
+    header {
+        margin-top: 5em;
+        text-align: center;
+        padding: .5em;
+        background: rgba(50, 80, 50, .8);
+    }
+
+    h1 {
+        color: #fff;
+        margin: .5em 0;
+    }
+
+    #me {
+        width: 25%;
+        height: 14em;
+        border: .1px solid #000;
+        border-radius: 50%;
+    }
+
+    header p {
+        text-align: justify;
+        margin: 0 4em;
+        padding: .7em 1em;
+        font-size: medium;
+        background: #fff;
+        transition: .9s;
+    }
+
+    .stack {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: small;
+        padding: 0 .7em;
+        width: 100%;
+        margin: .5em 0;
+    }
+
+    .stack-name {
+        text-align: center;
+        border: 2px solid #000;
+        margin: .3em;
+        background: rgb(50, 80, 50);
+        color: chartreuse;
+        width: 25%;
+    }
+
+    main {
+        font-size: small;
+        padding: 2em 0;
+        text-align: justify;
+        margin: 0 1em;
+    }
+
+    article {
+        width: 70%;
+        float: right;
+    }
+
+    article h3 {
+        margin-bottom: 1em;
+        padding: .6em;
+        color: chartreuse;
+        background: rgb(50, 80, 50);
+        padding-left: 1em;
+        font-size: medium;
+    }
+
+    article ul {
+        margin: 1em;
+        font-size: small;
+    }
+
+    article li {
+        margin-left: 2em;
+    }
+
+    article h4 {
+        margin-left: 1em;
+        margin-bottom: .5em;
+    }
+
+    article p {
+        margin-left: 1em;
+    }
+
+    .exp {
+        margin: 1em;
+        border-bottom: 1px solid #000;
+    }
+
+    .exp h4 {
+        margin-bottom: .5em;
+    }
+
+    .year {
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .exp h4 {
+        margin: 0.5 0; 
+    }
+
+    .exp ul li {
+        margin-left: 2em;
+        padding: .2em;
+    }
+
+    aside {
+        display: block;
+        width: 28%;
+        float: left;
+        margin-right: .3em;
+    }
+
+    aside h3 {
+        padding: .6em 2em;
+        background: rgb(50, 80, 50);
+        color: chartreuse;  
+    }
+
+    aside h4 {
+        margin: .5em 1em;
+        list-style: none;
+    }
+
+    aside ul li h4 {
+        list-style: none;
+        padding: 1em;
+    }
+
+    aside ul li ul {
+        padding-left: 4em;
+        border-bottom: 1px solid #000;
+        margin-bottom: 1em;
+        font-size: small;
+    }
+
+    aside ul li ul li {
+        padding: .5em 0;
+    }
+
+    .hobbies ul {
+        padding-left: 4em;
+    }
+
+    .hobbies ul li {
+        padding: .5em 0;
+        list-style: none;
+    }
+
+    footer {
+        background: rgb(50, 80, 50);
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position:relative;
+    }
+
+    .zuri {
+        width: 45%;
+        margin: .5em 0;
+        padding-left: .7em;
+        display: flex;
+    }
+
+    .zuri img {
+        width: 60%;
+        padding-left: 1em;
+        padding-top: .5em;
+        height: 3em;
+    }
+
+    .socials {
+        width: 45%;
+        padding-top: .5em;
+        padding-right: .5em;
+        
+    }
+
+    .socials ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .socials ul li{
+        list-style: none;
+    }
+
+    .socials img {
+        width: 1.6em;
+        height: 1.6em;
+        margin-top: 1em;
+        border: 1px solid rgb(50, 80, 50);
+        border-radius: 50%;
+    }
+  }
